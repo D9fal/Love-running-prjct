@@ -52,12 +52,13 @@
      letter-spacing: 4px;
  }
 
- #menu>li {
+ #menu > li {
      margin-bottom: 1em solid #3a3a3a;
  }
 
  .active {
-     border-bottom: 1px;
+     
+     border-bottom: 1px solid #3a3a3a
  }
 
  /* Navbar styles with dropdown toggle */
@@ -112,9 +113,11 @@
      padding-left: 10px;
  }
 
- #cover-text > h2, #cover-text > h3 {
-    color:#ffffff;
+ #cover-text>h2,
+ #cover-text>h3 {
+     color: #ffffff;
  }
+
  /*footer*/
  #social-networks {
      text-align: center;
@@ -147,16 +150,34 @@
          display: flex;
      }
 
+     #menu > li {
+         padding-left: 1rem;
+     }
+
      .nav-toggle-label {
          display: none;
 
      }
 
-     #menu li {
-         padding-left: 1rem;
+
+     #logo {
+         font-size: 280%;
+         line-height: 75px;
+         margin: 0 0.5rem;
      }
 
+     /*main content*/
+     main {
+         /* push main contain down to accomodate larger header*/
+         margin-top: 79px;
+     }
 
+     /* hero */
+
+     #cover-text {
+         width: 300px;
+         right: 50px;
+     }
  }
 
  /* Large devices (laptops and desktops, 992px and up) */
