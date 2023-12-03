@@ -113,12 +113,21 @@
          display: flex;
      }
 
-     .nav-toggle-label{
-        display:none;
-        
+     .nav-toggle-label {
+         display: none;
+
      }
 
      #menu li {
          padding-left: 1rem;
+     }
+
+
+ }
+
+ /* Large devices (laptops and desktops, 992px and up) */
+ @media screen and (min-width: 992px) {
+     #menu a:hover {
+         border-bottom: 1px solid #3a3a3a;
      }
  }
